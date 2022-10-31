@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+ <style>
+ @keyframes slide {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 30px;
+    
+  }
+  100% {
+    left: 0;
+    
+  }
+}
+.point {
+  position: absolute;
+}
+.ball {
+  
+  position: relative;
+  width: 20px;
+  border-radius: 50%;
+  background-color: red;
+}
+.blue {
+  position: relative;
+  height:20px;
+  width: 20px;
+  background-color: blue;
+  border-radius: 50%;
+}
+.text {
+  position: relative;
+  width: 20px;
+}
+
+.point {
+  animation-name: slide;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0.3s;
+}
+.ball {
+  animation-name: slide;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0.3s;
+}
+.blue {
+  animation-name: slide;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0.3s;
+}
+</style>
+</head>
+<body>
+  <div class="point">
+  <figure class="ball">
+    <div class="blue">
+    </div>
+  </figure>
+</div>
+</body>
+</html>
